@@ -68,7 +68,7 @@
     <ul class="current">
                 <li class="toctree-l3 current"><a class="reference internal current" href="#">HasAdjustOptionCount</a>
     <ul class="current">
-    <li class="toctree-l4"><a class="reference internal" href="#getcounttype">getCountType()</a>
+    <li class="toctree-l4"><a class="reference internal" href="#getorderable">getOrderable()</a>
     </li>
     </ul>
                 </li>
@@ -133,10 +133,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="hasadjustoptioncount">HasAdjustOptionCount</h1>
-<h2 id="getcounttype"><div id="getCountType">getCountType()</div></h2>
-<p>取得口味調整選擇數類型  </p>
-<h4 id="param"><div id="getCountType.Param">Param</div></h4>
+                <h1 id="hasorderable">HasOrderable</h1>
+<h2 id="getorderable">getOrderable()</h2>
+<p>確認餐點是否可點餐  </p>
+<h4 id="param">Param</h4>
 <table>
 <thead>
 <tr>
@@ -150,33 +150,33 @@
 </thead>
 <tbody>
 <tr>
-<td>min</td>
+<td>menu</td>
 <td>Y</td>
-<td>int</td>
-<td>至少選擇幾樣口味調整</td>
+<td>instance of <a href="../../../VOs/Menu/IStoreMenuVO/">IStoreMenuVO</a></td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>max</td>
-<td>Y</td>
-<td>int</td>
-<td>最多選擇幾樣口味調整</td>
+<td>diningType</td>
+<td>N</td>
+<td>string/null</td>
+<td>用餐方式</td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>fixed</td>
-<td>Y</td>
-<td>int</td>
-<td>固定選擇幾樣口味調整</td>
+<td>bookingTime</td>
+<td>N</td>
+<td>string/null</td>
+<td>預計取餐時間</td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<h4 id="return"><div id="getCountType.Return">Return</div></h4>
-<p>string/null</p>
+<h4 id="return">Return</h4>
+<p><a href="../../../VOs/Menu/StoreMenuOrderableVO/">StoreMenuOrderableVO</a></p>
               
             </div>
           </div><footer>
