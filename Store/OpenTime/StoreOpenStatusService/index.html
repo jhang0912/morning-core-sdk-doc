@@ -47,15 +47,57 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >營業時段</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../StoreOpenTimeService/">StoreOpenTimeService</a>
-                </li>
-    </ul>
-                  </li>
                   <li class="toctree-l1 current"><a class="reference internal current" >營業狀態</a>
     <ul class="current">
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">StoreOpenStatusService</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#setopenstatus">setOpenStatus()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return">Return</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#getopenstatus">getOpenStatus()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_1">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_1">Return</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#gettodayopentime">getTodayOpenTime()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_2">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_2">Return</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#istodayonlineorderactivated">isTodayOnlineOrderActivated()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_3">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_3">Return</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#isonlineorderactivated">isOnlineOrderActivated()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_4">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_4">Return</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >營業時段</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../StoreOpenTimeService/">StoreOpenTimeService</a>
                 </li>
     </ul>
                   </li>
@@ -128,13 +170,152 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="storeopenstatusservice">StoreOpenStatusService</h1>
+<h2 id="setopenstatus"><div id="setOpenStatus">setOpenStatus()</div></h2>
+<p>設定營業狀態  </p>
+<h4 id="param"><div id="setOpenStatus.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>storeModelOrId</td>
+<td>Y</td>
+<td>instance of Store/string</td>
+<td>Store實例或店家ID</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return"><div id="setOpenStatus.Return">Return</div></h4>
+<p>void</p>
+<hr />
+<h2 id="getopenstatus"><div id="getOpenStatus">getOpenStatus()</div></h2>
+<p>取得營業狀態  </p>
+<h4 id="param_1"><div id="getOpenStatus.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_1"><div id="getOpenStatus.Return">Return</div></h4>
+<p>string</p>
+<hr />
+<h2 id="gettodayopentime"><div id="getTodayOpenTime">getTodayOpenTime()</div></h2>
+<p>取得當日營業時段  </p>
+<h4 id="param_2"><div id="getTodayOpenTime.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_2"><div id="getTodayOpenTime.Return">Return</div></h4>
+<p><a href="../../../Attachments/VOs/StoreOpenTimeVO/">StoreOpenTimeVO</a></p>
+<hr />
+<h2 id="istodayonlineorderactivated"><div id="isTodayOnlineOrderActivated">isTodayOnlineOrderActivated()</div></h2>
+<p>今日是否還可以點餐  </p>
+<h4 id="param_3"><div id="isTodayOnlineOrderActivated.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_3"><div id="isTodayOnlineOrderActivated.Return">Return</div></h4>
+<p>boolean</p>
+<hr />
+<h2 id="isonlineorderactivated"><div id="isOnlineOrderActivated">isOnlineOrderActivated()</div></h2>
+<p>當前是否可以線上點餐  </p>
+<h4 id="param_4"><div id="isOnlineOrderActivated.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_4"><div id="isOnlineOrderActivated.Return">Return</div></h4>
+<p>boolean</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../StoreOpenTimeService/" class="btn btn-neutral float-left" title="StoreOpenTimeService"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../../Attachments/Traits/Menu/HasAdjustOptionCount/" class="btn btn-neutral float-right" title="HasAdjustOptionCount">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../Menu/StorePackageService/" class="btn btn-neutral float-left" title="StorePackageService"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../StoreOpenTimeService/" class="btn btn-neutral float-right" title="StoreOpenTimeService">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -157,10 +338,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../StoreOpenTimeService/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../Menu/StorePackageService/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../../Attachments/Traits/Menu/HasAdjustOptionCount/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../StoreOpenTimeService/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

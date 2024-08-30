@@ -53,19 +53,83 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#first">first()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_1">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_1">Return</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#addstorepackages">addStorePackages()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_2">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_2">Return</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#addpackage">addPackage()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_3">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_3">Return</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#withitems">withItems()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_4">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_4">Return</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#withadjustments">withAdjustments()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_5">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_5">Return</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#withopentimes">withOpenTimes()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_6">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_6">Return</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#filteroff">filterOff()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_7">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_7">Return</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#withorderable">withOrderable()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param_8">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return_8">Return</a>
+    </li>
+        </ul>
+    </li>
     </ul>
-                </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" >營業時段</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../OpenTime/StoreOpenTimeService/">StoreOpenTimeService</a>
                 </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" >營業狀態</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../OpenTime/StoreOpenStatusService/">StoreOpenStatusService</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >營業時段</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../OpenTime/StoreOpenTimeService/">StoreOpenTimeService</a>
                 </li>
     </ul>
                   </li>
@@ -139,29 +203,32 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="storepackageservice">StorePackageService</h1>
-<h2 id="all">all()</h2>
+<h2 id="all"><div id="all">all()</div></h2>
 <p>取得全部套餐內容  </p>
-<h5 id="param">Param</h5>
-<table width="100%">
-  <tr>
-    <th>Parameter</th>
-    <th>Required</th>
-    <th>Format</th>
-    <th>Description</th>
-    <th>Example</th>
-    <th>Notes</th>
-  </tr>
-  <tr>
-    <td>無</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
+<h4 id="param"><div id="all.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
 </table>
-
-<h5 id="return">Return</h5>
+<h4 id="return"><div id="all.Return">Return</div></h4>
 <pre><code>[
     {
     &quot;packageID&quot;: &quot;7f83228f5c579df605532c12d29c40f5&quot;,
@@ -574,482 +641,741 @@
 ]
 </code></pre>
 <table>
-        <tr>
-            <th>Parameter</th>
-            <th>Required</th>
-            <th>Format</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Notes</th>
-        </tr>
-        <tr>
-            <td>packageID</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>套餐ID</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>storeID</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>商店ID</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>name</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>套餐名稱</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>price</td>
-            <td>Y</td>
-            <td>number</td>
-            <td>價格</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>diningType</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>用餐類型</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>extraComment</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>額外備註</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>imgUrl</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>圖片URL</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>toggle</td>
-            <td>Y</td>
-            <td>int</td>
-            <td>開關狀態</td>
-            <td></td>
-            <td>1: 開 0: 關</td>
-        </tr>
-        <tr>
-            <td>isSoldOut</td>
-            <td>Y</td>
-            <td>int</td>
-            <td>是否售罄</td>
-            <td></td>
-            <td>1: 是 0: 否</td>
-        </tr>
-        <tr>
-            <td>openTimeTexts</td>
-            <td>Y</td>
-            <td>array/null</td>
-            <td>營業時間文字</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>dayOpenTimes</td>
-            <td>Y</td>
-            <td>array</td>
-            <td>每日營業時間</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>orderable</td>
-            <td>Y</td>
-            <td>object</td>
-            <td>可訂購狀態</td>
-            <td></td>
-            <td>orderable 說明</td>
-        </tr>
-        <tr>
-            <td>categories</td>
-            <td>Y</td>
-            <td>array</td>
-            <td>分類列表</td>
-            <td></td>
-            <td>categories 說明</td>
-        </tr>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>packageID</td>
+<td>Y</td>
+<td>string</td>
+<td>套餐ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>storeID</td>
+<td>Y</td>
+<td>string</td>
+<td>商店ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Y</td>
+<td>string</td>
+<td>套餐名稱</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>price</td>
+<td>Y</td>
+<td>number</td>
+<td>價格</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>diningType</td>
+<td>Y</td>
+<td>string</td>
+<td>用餐類型</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>extraComment</td>
+<td>Y</td>
+<td>string</td>
+<td>額外備註</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>imgUrl</td>
+<td>Y</td>
+<td>string</td>
+<td>圖片URL</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>toggle</td>
+<td>Y</td>
+<td>int</td>
+<td>開關狀態</td>
+<td></td>
+<td>1: 開 0: 關</td>
+</tr>
+<tr>
+<td>isSoldOut</td>
+<td>Y</td>
+<td>int</td>
+<td>是否售罄</td>
+<td></td>
+<td>1: 是 0: 否</td>
+</tr>
+<tr>
+<td>openTimeTexts</td>
+<td>Y</td>
+<td>array/null</td>
+<td>營業時間文字</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>dayOpenTimes</td>
+<td>Y</td>
+<td>array</td>
+<td>每日營業時間</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>orderable</td>
+<td>Y</td>
+<td>object</td>
+<td>可訂購狀態</td>
+<td></td>
+<td>orderable 說明</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>Y</td>
+<td>array</td>
+<td>分類列表</td>
+<td></td>
+<td>categories 說明</td>
+</tr>
+</tbody>
 </table>
-
-<h2>orderable</h2>
+<ul>
+<li>orderable</li>
+</ul>
 <table>
-        <tr>
-            <th>Parameter</th>
-            <th>Required</th>
-            <th>Format</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Notes</th>
-        </tr>
-        <tr>
-            <td>isOrderable</td>
-            <td>Y</td>
-            <td>int</td>
-            <td>是否可訂購</td>
-            <td></td>
-            <td>1: 是 0: 否</td>
-        </tr>
-        <tr>
-            <td>reasons</td>
-            <td>Y</td>
-            <td>array</td>
-            <td>原因列表</td>
-            <td></td>
-            <td></td>
-        </tr>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>isOrderable</td>
+<td>Y</td>
+<td>int</td>
+<td>是否可訂購</td>
+<td></td>
+<td>1: 是 0: 否</td>
+</tr>
+<tr>
+<td>reasons</td>
+<td>Y</td>
+<td>array</td>
+<td>原因列表</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
 </table>
-
-<h2>categories</h2>
+<ul>
+<li>categories</li>
+</ul>
 <table>
-        <tr>
-            <th>Parameter</th>
-            <th>Required</th>
-            <th>Format</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Notes</th>
-        </tr>
-        <tr>
-            <td>categoryID</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>分類ID</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>name</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>分類名稱</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>imgUrl</td>
-            <td>Y</td>
-            <td>string/null</td>
-            <td>圖片URL</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>extraComment</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>額外備註</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>toggle</td>
-            <td>Y</td>
-            <td>int</td>
-            <td>開關狀態</td>
-            <td></td>
-            <td>1: 開 0: 關</td>
-        </tr>
-        <tr>
-            <td>isSoldOut</td>
-            <td>Y</td>
-            <td>int</td>
-            <td>是否售罄</td>
-            <td></td>
-            <td>1: 是 0: 否</td>
-        </tr>
-        <tr>
-            <td>orderable</td>
-            <td>Y</td>
-            <td>object</td>
-            <td>可訂購狀態</td>
-            <td></td>
-            <td>orderable 說明</td>
-        </tr>
-        <tr>
-            <td>items</td>
-            <td>Y</td>
-            <td>array</td>
-            <td>項目列表</td>
-            <td></td>
-            <td>items 說明</td>
-        </tr>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>categoryID</td>
+<td>Y</td>
+<td>string</td>
+<td>分類ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Y</td>
+<td>string</td>
+<td>分類名稱</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>imgUrl</td>
+<td>Y</td>
+<td>string/null</td>
+<td>圖片URL</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>extraComment</td>
+<td>Y</td>
+<td>string</td>
+<td>額外備註</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>toggle</td>
+<td>Y</td>
+<td>int</td>
+<td>開關狀態</td>
+<td></td>
+<td>1: 開 0: 關</td>
+</tr>
+<tr>
+<td>isSoldOut</td>
+<td>Y</td>
+<td>int</td>
+<td>是否售罄</td>
+<td></td>
+<td>1: 是 0: 否</td>
+</tr>
+<tr>
+<td>orderable</td>
+<td>Y</td>
+<td>object</td>
+<td>可訂購狀態</td>
+<td></td>
+<td>orderable 說明</td>
+</tr>
+<tr>
+<td>items</td>
+<td>Y</td>
+<td>array</td>
+<td>項目列表</td>
+<td></td>
+<td>items 說明</td>
+</tr>
+</tbody>
 </table>
-
-<h2>items</h2>
+<ul>
+<li>items</li>
+</ul>
 <table>
-        <tr>
-            <th>Parameter</th>
-            <th>Required</th>
-            <th>Format</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Notes</th>
-        </tr>
-        <tr>
-            <td>packageItemID</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>套餐項目ID</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>flavourID</td>
-            <td>Y</td>
-            <td>string/null</td>
-            <td>口味ID</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>name</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>項目名稱</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>priceDiff</td>
-            <td>Y</td>
-            <td>number</td>
-            <td>價格差異</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>imgUrl</td>
-            <td>Y</td>
-            <td>string/null</td>
-            <td>圖片URL</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>extraComment</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>額外備註</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>isRecommend</td>
-            <td>Y</td>
-            <td>int</td>
-            <td>是否推薦</td>
-            <td></td>
-            <td>1: 是 0: 否</td>
-        </tr>
-        <tr>
-            <td>toggle</td>
-            <td>Y</td>
-            <td>int</td>
-            <td>開關狀態</td>
-            <td></td>
-            <td>1: 開 0: 關</td>
-        </tr>
-        <tr>
-            <td>isSoldOut</td>
-            <td>Y</td>
-            <td>int</td>
-            <td>是否售罄</td>
-            <td></td>
-            <td>1: 是 0: 否</td>
-        </tr>
-        <tr>
-            <td>orderable</td>
-            <td>Y</td>
-            <td>object</td>
-            <td>可訂購狀態</td>
-            <td></td>
-            <td>orderable 說明</td>
-        </tr>
-        <tr>
-            <td>adjustments</td>
-            <td>Y</td>
-            <td>array</td>
-            <td>調整選項</td>
-            <td></td>
-            <td>adjustments 說明</td>
-        </tr>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>packageItemID</td>
+<td>Y</td>
+<td>string</td>
+<td>套餐項目ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>flavourID</td>
+<td>Y</td>
+<td>string/null</td>
+<td>口味ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Y</td>
+<td>string</td>
+<td>項目名稱</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>priceDiff</td>
+<td>Y</td>
+<td>number</td>
+<td>價格差異</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>imgUrl</td>
+<td>Y</td>
+<td>string/null</td>
+<td>圖片URL</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>extraComment</td>
+<td>Y</td>
+<td>string</td>
+<td>額外備註</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>isRecommend</td>
+<td>Y</td>
+<td>int</td>
+<td>是否推薦</td>
+<td></td>
+<td>1: 是 0: 否</td>
+</tr>
+<tr>
+<td>toggle</td>
+<td>Y</td>
+<td>int</td>
+<td>開關狀態</td>
+<td></td>
+<td>1: 開 0: 關</td>
+</tr>
+<tr>
+<td>isSoldOut</td>
+<td>Y</td>
+<td>int</td>
+<td>是否售罄</td>
+<td></td>
+<td>1: 是 0: 否</td>
+</tr>
+<tr>
+<td>orderable</td>
+<td>Y</td>
+<td>object</td>
+<td>可訂購狀態</td>
+<td></td>
+<td>orderable 說明</td>
+</tr>
+<tr>
+<td>adjustments</td>
+<td>Y</td>
+<td>array</td>
+<td>調整選項</td>
+<td></td>
+<td>adjustments 說明</td>
+</tr>
+</tbody>
 </table>
-
-<h2>adjustments</h2>
+<ul>
+<li>adjustments</li>
+</ul>
 <table>
-        <tr>
-            <th>Parameter</th>
-            <th>Required</th>
-            <th>Format</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Notes</th>
-        </tr>
-        <tr>
-            <td>adjustClassID</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>調整類別ID</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>name</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>調整名稱</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>type</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>調整類型</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>isRequired</td>
-            <td>Y</td>
-            <td>int</td>
-            <td>是否必選</td>
-            <td></td>
-            <td>1: 是 0: 否</td>
-        </tr>
-        <tr>
-            <td>countType</td>
-            <td>Y</td>
-            <td>string/null</td>
-            <td>計數類型</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>minCount</td>
-            <td>Y</td>
-            <td>number/null</td>
-            <td>最小數量</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>maxCount</td>
-            <td>Y</td>
-            <td>number/null</td>
-            <td>最大數量</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>fixedCount</td>
-            <td>Y</td>
-            <td>number/null</td>
-            <td>固定數量</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>options</td>
-            <td>Y</td>
-            <td>array</td>
-            <td>選項列表</td>
-            <td></td>
-            <td>options 說明</td>
-        </tr>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>adjustClassID</td>
+<td>Y</td>
+<td>string</td>
+<td>調整類別ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Y</td>
+<td>string</td>
+<td>調整名稱</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>Y</td>
+<td>string</td>
+<td>調整類型</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>isRequired</td>
+<td>Y</td>
+<td>int</td>
+<td>是否必選</td>
+<td></td>
+<td>1: 是 0: 否</td>
+</tr>
+<tr>
+<td>countType</td>
+<td>Y</td>
+<td>string/null</td>
+<td>計數類型</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>minCount</td>
+<td>Y</td>
+<td>number/null</td>
+<td>最小數量</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>maxCount</td>
+<td>Y</td>
+<td>number/null</td>
+<td>最大數量</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>fixedCount</td>
+<td>Y</td>
+<td>number/null</td>
+<td>固定數量</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>options</td>
+<td>Y</td>
+<td>array</td>
+<td>選項列表</td>
+<td></td>
+<td>options 說明</td>
+</tr>
+</tbody>
 </table>
-
-<h2 id="options">options</h2>
+<ul>
+<li>options</li>
+</ul>
 <table>
-        <tr>
-            <th>Parameter</th>
-            <th>Required</th>
-            <th>Format</th>
-            <th>Description</th>
-            <th>Example</th>
-            <th>Notes</th>
-        </tr>
-        <tr>
-            <td>packageAdjustID</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>套餐調整ID</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>adjustID</td>
-            <td>Y</td>
-            <td>string/null</td>
-            <td>調整ID</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>name</td>
-            <td>Y</td>
-            <td>string</td>
-            <td>選項名稱</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>priceDiff</td>
-            <td>Y</td>
-            <td>number</td>
-            <td>價格差異</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>toggle</td>
-            <td>Y</td>
-            <td>int</td>
-            <td>開關狀態</td>
-            <td></td>
-            <td>1: 開 0: 關</td>
-        </tr>
-        <tr>
-            <td>isSoldOut</td>
-            <td>Y</td>
-            <td>int</td>
-            <td>是否售罄</td>
-            <td></td>
-            <td>1: 是 0: 否</td>
-        </tr>
-        <tr>
-            <td>orderable</td>
-            <td>Y</td>
-            <td>object/null</td>
-            <td>可訂購狀態</td>
-            <td></td>
-            <td>orderable 說明</td>
-        </tr>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>packageAdjustID</td>
+<td>Y</td>
+<td>string</td>
+<td>套餐調整ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>adjustID</td>
+<td>Y</td>
+<td>string/null</td>
+<td>調整ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>name</td>
+<td>Y</td>
+<td>string</td>
+<td>選項名稱</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>priceDiff</td>
+<td>Y</td>
+<td>number</td>
+<td>價格差異</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>toggle</td>
+<td>Y</td>
+<td>int</td>
+<td>開關狀態</td>
+<td></td>
+<td>1: 開 0: 關</td>
+</tr>
+<tr>
+<td>isSoldOut</td>
+<td>Y</td>
+<td>int</td>
+<td>是否售罄</td>
+<td></td>
+<td>1: 是 0: 否</td>
+</tr>
+<tr>
+<td>orderable</td>
+<td>Y</td>
+<td>object/null</td>
+<td>可訂購狀態</td>
+<td></td>
+<td>orderable 說明</td>
+</tr>
+</tbody>
 </table>
-
 <hr />
+<h2 id="first"><div id="first">first()</div></h2>
+<p>取得第一份套餐內容  </p>
+<h4 id="param_1"><div id="first.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_1"><div id="first.Return">Return</div></h4>
+<p><a href="../../../Attachments/VOs/Menu/StorePackageVO/">StorePackageVO</a>/null</p>
+<hr />
+<h2 id="addstorepackages"><div id="addStorePackages">addStorePackages()</div></h2>
+<p>添加店家全部套餐  </p>
+<h4 id="param_2"><div id="addStorePackages.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>storeModelOrId</td>
+<td>Y</td>
+<td>instance of Store/string</td>
+<td>Store實例或店家ID</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_2"><div id="addStorePackages.Return">Return</div></h4>
+<p>self</p>
+<hr />
+<h2 id="addpackage"><div id="addPackage">addPackage()</div></h2>
+<p>添加單一套餐  </p>
+<h4 id="param_3"><div id="addPackage.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>packageID</td>
+<td>Y</td>
+<td>string</td>
+<td>套餐ID</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_3"><div id="addPackage.Return">Return</div></h4>
+<p>self</p>
+<hr />
+<h2 id="withitems"><div id="withItems">withItems()</div></h2>
+<p>加入套餐品項  </p>
+<h4 id="param_4"><div id="withItems.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_4"><div id="withItems.Return">Return</div></h4>
+<p>self</p>
+<hr />
+<h2 id="withadjustments"><div id="withAdjustments">withAdjustments()</div></h2>
+<p>加入口味調整  </p>
+<h4 id="param_5"><div id="withAdjustments.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_5"><div id="withAdjustments.Return">Return</div></h4>
+<p>self</p>
+<hr />
+<h2 id="withopentimes"><div id="withOpenTimes">withOpenTimes()</div></h2>
+<p>加入限定時段  </p>
+<h4 id="param_6"><div id="withOpenTimes.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>date</td>
+<td>N</td>
+<td>string/null</td>
+<td>日期</td>
+<td></td>
+<td>YYYY-MM-DD</td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_6"><div id="withOpenTimes.Return">Return</div></h4>
+<p>self</p>
+<hr />
+<h2 id="filteroff"><div id="filterOff">filterOff()</div></h2>
+<p>移除已下架  </p>
+<h4 id="param_7"><div id="filterOff.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_7"><div id="filterOff.Return">Return</div></h4>
+<p>self</p>
+<hr />
+<h2 id="withorderable"><div id="withOrderable">withOrderable()</div></h2>
+<p>加入是否可點餐  </p>
+<h4 id="param_8"><div id="withOrderable.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>diningType</td>
+<td>N</td>
+<td>string/null</td>
+<td>用餐方式</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>bookingTime</td>
+<td>N</td>
+<td>string/null</td>
+<td>預計取餐時間</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return_8"><div id="withOrderable.Return">Return</div></h4>
+<p>self</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../OpenTime/StoreOpenTimeService/" class="btn btn-neutral float-right" title="StoreOpenTimeService">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../OpenTime/StoreOpenStatusService/" class="btn btn-neutral float-right" title="StoreOpenStatusService">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -1073,7 +1399,7 @@
     
     
     
-      <span><a href="../../OpenTime/StoreOpenTimeService/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../OpenTime/StoreOpenStatusService/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

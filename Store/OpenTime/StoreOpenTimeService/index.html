@@ -47,15 +47,25 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" >營業時段</a>
-    <ul class="current">
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">StoreOpenTimeService</a>
-                </li>
-    </ul>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" >營業狀態</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../StoreOpenStatusService/">StoreOpenStatusService</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >營業時段</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">StoreOpenTimeService</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#getstoreopentimes">getStoreOpenTimes()</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#param">Param</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#return">Return</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
                 </li>
     </ul>
                   </li>
@@ -128,13 +138,254 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="storeopentimeservice">StoreOpenTimeService</h1>
+<h2 id="getstoreopentimes"><div id="getStoreOpenTimes">getStoreOpenTimes()</div></h2>
+<p>設定營業狀態  </p>
+<h4 id="param"><div id="getStoreOpenTimes.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>storeModelOrId</td>
+<td>Y</td>
+<td>instance of Store/string</td>
+<td>店家實例或ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>startDate</td>
+<td>Y</td>
+<td>string</td>
+<td>開始日期</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>days</td>
+<td>Y</td>
+<td>int</td>
+<td>天數</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return"><div id="getStoreOpenTimes.Return">Return</div></h4>
+<pre><code>[
+  {
+    &quot;date&quot;: &quot;2024-08-30&quot;,
+    &quot;day&quot;: &quot;5&quot;,
+    &quot;dayText&quot;: &quot;週五&quot;,
+    &quot;isOff&quot;: 0,
+    &quot;offType&quot;: null,
+    &quot;holidayName&quot;: null,
+    &quot;openTimes&quot;: [
+      {
+        &quot;startTime&quot;: &quot;10:00:00&quot;,
+        &quot;endTime&quot;: &quot;19:30:59&quot;
+      }
+    ]
+  },
+  {
+    &quot;date&quot;: &quot;2024-08-31&quot;,
+    &quot;day&quot;: &quot;6&quot;,
+    &quot;dayText&quot;: &quot;週六&quot;,
+    &quot;isOff&quot;: 0,
+    &quot;offType&quot;: null,
+    &quot;holidayName&quot;: null,
+    &quot;openTimes&quot;: [
+      {
+        &quot;startTime&quot;: &quot;09:00:00&quot;,
+        &quot;endTime&quot;: &quot;19:30:59&quot;
+      }
+    ]
+  },
+  {
+    &quot;date&quot;: &quot;2024-09-01&quot;,
+    &quot;day&quot;: &quot;7&quot;,
+    &quot;dayText&quot;: &quot;週日&quot;,
+    &quot;isOff&quot;: 1,
+    &quot;offType&quot;: &quot;REGULAR&quot;,
+    &quot;holidayName&quot;: null,
+    &quot;openTimes&quot;: []
+  },
+  {
+    &quot;date&quot;: &quot;2024-09-02&quot;,
+    &quot;day&quot;: &quot;1&quot;,
+    &quot;dayText&quot;: &quot;週一&quot;,
+    &quot;isOff&quot;: 0,
+    &quot;offType&quot;: null,
+    &quot;holidayName&quot;: null,
+    &quot;openTimes&quot;: [
+      {
+        &quot;startTime&quot;: &quot;00:15:00&quot;,
+        &quot;endTime&quot;: &quot;18:30:59&quot;
+      }
+    ]
+  },
+  {
+    &quot;date&quot;: &quot;2024-09-03&quot;,
+    &quot;day&quot;: &quot;2&quot;,
+    &quot;dayText&quot;: &quot;週二&quot;,
+    &quot;isOff&quot;: 0,
+    &quot;offType&quot;: null,
+    &quot;holidayName&quot;: null,
+    &quot;openTimes&quot;: [
+      {
+        &quot;startTime&quot;: &quot;10:00:00&quot;,
+        &quot;endTime&quot;: &quot;19:30:59&quot;
+      }
+    ]
+  },
+  {
+    &quot;date&quot;: &quot;2024-09-04&quot;,
+    &quot;day&quot;: &quot;3&quot;,
+    &quot;dayText&quot;: &quot;週三&quot;,
+    &quot;isOff&quot;: 0,
+    &quot;offType&quot;: null,
+    &quot;holidayName&quot;: null,
+    &quot;openTimes&quot;: [
+      {
+        &quot;startTime&quot;: &quot;00:00:00&quot;,
+        &quot;endTime&quot;: &quot;19:30:59&quot;
+      }
+    ]
+  },
+  {
+    &quot;date&quot;: &quot;2024-09-05&quot;,
+    &quot;day&quot;: &quot;4&quot;,
+    &quot;dayText&quot;: &quot;週四&quot;,
+    &quot;isOff&quot;: 0,
+    &quot;offType&quot;: null,
+    &quot;holidayName&quot;: null,
+    &quot;openTimes&quot;: [
+      {
+        &quot;startTime&quot;: &quot;10:00:00&quot;,
+        &quot;endTime&quot;: &quot;19:30:59&quot;
+      }
+    ]
+  }
+]
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>date</td>
+<td>Y</td>
+<td>string</td>
+<td>日期</td>
+<td></td>
+<td>YYYY-MM-DD</td>
+</tr>
+<tr>
+<td>day</td>
+<td>Y</td>
+<td>string</td>
+<td>星期幾</td>
+<td></td>
+<td>1~7</td>
+</tr>
+<tr>
+<td>dayText</td>
+<td>Y</td>
+<td>string</td>
+<td>星期文字</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>isOff</td>
+<td>Y</td>
+<td>int</td>
+<td>是否休息</td>
+<td></td>
+<td>1: 是 0: 否</td>
+</tr>
+<tr>
+<td>offType</td>
+<td>N</td>
+<td>string/null</td>
+<td>休息類型</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>holidayName</td>
+<td>N</td>
+<td>string/null</td>
+<td>國定假日名稱</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>openTimes</td>
+<td>Y</td>
+<td>array</td>
+<td>營業時間列表</td>
+<td></td>
+<td>openTimes 說明</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>openTimes  </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>startTime</td>
+<td>Y</td>
+<td>string</td>
+<td>開始時間</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>endTime</td>
+<td>Y</td>
+<td>string</td>
+<td>結束時間</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../Menu/StorePackageService/" class="btn btn-neutral float-left" title="StorePackageService"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../StoreOpenStatusService/" class="btn btn-neutral float-right" title="StoreOpenStatusService">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../StoreOpenStatusService/" class="btn btn-neutral float-left" title="StoreOpenStatusService"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../../Attachments/Traits/Menu/HasAdjustOptionCount/" class="btn btn-neutral float-right" title="HasAdjustOptionCount">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -157,10 +408,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../Menu/StorePackageService/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../StoreOpenStatusService/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../StoreOpenStatusService/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../../Attachments/Traits/Menu/HasAdjustOptionCount/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

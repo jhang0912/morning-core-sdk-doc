@@ -47,15 +47,15 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >營業時段</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../../../Store/OpenTime/StoreOpenTimeService/">StoreOpenTimeService</a>
-                </li>
-    </ul>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" >營業狀態</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../../../Store/OpenTime/StoreOpenStatusService/">StoreOpenStatusService</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >營業時段</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Store/OpenTime/StoreOpenTimeService/">StoreOpenTimeService</a>
                 </li>
     </ul>
                   </li>
@@ -69,6 +69,10 @@
                 <li class="toctree-l3"><a class="reference internal" href="../HasAdjustOptionCount/">HasAdjustOptionCount</a>
                 </li>
                 <li class="toctree-l3 current"><a class="reference internal current" href="#">HasOrderable</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#getorderable">getOrderable()</a>
+    </li>
+    </ul>
                 </li>
     </ul>
                 </li>
@@ -129,7 +133,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="hasorderable">HasOrderable</h1>
+<h2 id="getorderable"><div id="getOrderable">getOrderable()</div></h2>
+<p>確認餐點是否可點餐  </p>
+<h4 id="param"><div id="getOrderable.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>menu</td>
+<td>Y</td>
+<td>instance of <a href="../../../VOs/Menu/IStoreMenuVO/">IStoreMenuVO</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>diningType</td>
+<td>N</td>
+<td>string/null</td>
+<td>用餐方式</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>bookingTime</td>
+<td>N</td>
+<td>string/null</td>
+<td>預計取餐時間</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return"><div id="getOrderable.Return">Return</div></h4>
+<p><a href="../../../VOs/Menu/StoreMenuOrderableVO/">StoreMenuOrderableVO</a></p>
               
             </div>
           </div><footer>

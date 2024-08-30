@@ -47,15 +47,15 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >營業時段</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../../../Store/OpenTime/StoreOpenTimeService/">StoreOpenTimeService</a>
-                </li>
-    </ul>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" >營業狀態</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../../../Store/OpenTime/StoreOpenStatusService/">StoreOpenStatusService</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >營業時段</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Store/OpenTime/StoreOpenTimeService/">StoreOpenTimeService</a>
                 </li>
     </ul>
                   </li>
@@ -89,6 +89,12 @@
                 <li class="toctree-l3"><a class="reference internal" href="../StorePackageAdjustClassVO/">StorePackageAdjustClassVO</a>
                 </li>
                 <li class="toctree-l3 current"><a class="reference internal current" href="#">StorePackageAdjustOptionVO</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#implements">Implements</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a>
+    </li>
+    </ul>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../StorePackageCategoryVO/">StorePackageCategoryVO</a>
                 </li>
@@ -129,7 +135,72 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h2 id="storepackageadjustoptionvo">StorePackageAdjustOptionVO</h2>
+<h4 id="implements">Implements</h4>
+<p><a href="../IStoreMenuVO/">IStoreMenuVO</a></p>
+<h4 id="properties"><div id="StorePackageAdjustOptionVO.Properties">Properties</div></h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>packageAdjustID</td>
+<td>string</td>
+<td>包裝調整 ID</td>
+<td>''</td>
+<td></td>
+</tr>
+<tr>
+<td>adjustID</td>
+<td>string/null</td>
+<td>調整 ID</td>
+<td>null</td>
+<td>NULL為自定義餐點</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>名稱</td>
+<td>''</td>
+<td></td>
+</tr>
+<tr>
+<td>priceDiff</td>
+<td>int</td>
+<td>價格差異</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>toggle</td>
+<td>int</td>
+<td>開關</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>isSoldOut</td>
+<td>int</td>
+<td>是否售罄</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>orderable</td>
+<td><a href="../StoreMenuOrderableVO/">StoreMenuOrderableVO</a>/null</td>
+<td>點餐狀態</td>
+<td>null</td>
+<td>沒Call Builder會是NULL</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>

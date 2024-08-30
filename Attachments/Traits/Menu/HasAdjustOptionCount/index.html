@@ -47,15 +47,15 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" >營業時段</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../../../Store/OpenTime/StoreOpenTimeService/">StoreOpenTimeService</a>
-                </li>
-    </ul>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" >營業狀態</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../../../Store/OpenTime/StoreOpenStatusService/">StoreOpenStatusService</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >營業時段</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../Store/OpenTime/StoreOpenTimeService/">StoreOpenTimeService</a>
                 </li>
     </ul>
                   </li>
@@ -67,6 +67,10 @@
                 <li class="toctree-l2 current"><a class="reference internal current" >菜單相關</a>
     <ul class="current">
                 <li class="toctree-l3 current"><a class="reference internal current" href="#">HasAdjustOptionCount</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#getcounttype">getCountType()</a>
+    </li>
+    </ul>
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../HasOrderable/">HasOrderable</a>
                 </li>
@@ -129,12 +133,55 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="hasadjustoptioncount">HasAdjustOptionCount</h1>
+<h2 id="getcounttype"><div id="getCountType">getCountType()</div></h2>
+<p>取得口味調整選擇數類型  </p>
+<h4 id="param"><div id="getCountType.Param">Param</div></h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Format</th>
+<th>Description</th>
+<th>Example</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>min</td>
+<td>Y</td>
+<td>int</td>
+<td>至少選擇幾樣口味調整</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>max</td>
+<td>Y</td>
+<td>int</td>
+<td>最多選擇幾樣口味調整</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>Y</td>
+<td>int</td>
+<td>固定選擇幾樣口味調整</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="return"><div id="getCountType.Return">Return</div></h4>
+<p>string/null</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../../../Store/OpenTime/StoreOpenStatusService/" class="btn btn-neutral float-left" title="StoreOpenStatusService"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../../../Store/OpenTime/StoreOpenTimeService/" class="btn btn-neutral float-left" title="StoreOpenTimeService"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../HasOrderable/" class="btn btn-neutral float-right" title="HasOrderable">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -158,7 +205,7 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../../../Store/OpenTime/StoreOpenStatusService/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../../../Store/OpenTime/StoreOpenTimeService/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../HasOrderable/" style="color: #fcfcfc">Next &raquo;</a></span>
